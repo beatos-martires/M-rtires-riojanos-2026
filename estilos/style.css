@@ -568,8 +568,7 @@ header{
         "destacado2"
         "separador2"
         "enlaces";
-    margin: 20px 70px;
-    /*justify-content: space-between;*/}
+    margin: 20px 70px;}
 
 .carrusel2{
     grid-area: carrusel;
@@ -577,35 +576,34 @@ header{
 
 .destacado{
     grid-area: destacado1;
+    font-size: 22px;
+    margin-top: 20px;
     background-color: #5c7847;}
 
 .separador-biografia{
     grid-area: separador1;
     background-color: #584199;
     height: 5px;
-    width: 86.1%;
+    width: 100%;
     margin-bottom: 20px;}
 
-
-.biografia-martires{
+.biografia-martires{ /*Targetas de los mártires*/
     grid-area: martires;
     background-color: aqua;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;}
 
+        .card-title{text-align: center;} /*Titulo de las tragetas*/
+
 .destacado2{
-    grid-area: destacado2;
-    background-color: #5c7847;
-    height: 15px;
-    width: 86.1%;
-    margin-bottom: 20px;}
+    grid-area: destacado2;}
 
 .separador2{
     grid-area: separador2;
     background-color: #584199;
-    height: 15px;
-    width: 86.1%;
+    height: 5px;
+    width: 100%;
     margin-bottom: 20px;}
 
 .enlaces{
@@ -613,3 +611,73 @@ header{
     display: flex;
     flex-direction: row;
     background-color: yellow;}
+
+/*Biografia Enrique angelelli*/
+
+.encabezado{
+    display: grid;
+    grid-template-columns: 704px 272px auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "menu menu menu"
+    "foto foto1 indice"
+    "foto foto2 reseña"
+    "angelelli angelelli reseña"
+    "separador separador reseña"
+    "desarrollo desarrollo reseña";
+    margin: 20px 70px;}
+
+.menu{
+    grid-area: menu;
+    background-color: #be1e2d;}
+
+.imagen1{
+    grid-area: foto;
+    background-color: #5c7847;}
+
+.imagen2{
+    grid-area: foto1;
+    background-color: aqua;}
+
+.imagen3{
+    grid-area: foto2;
+    background-color:#51483d;}
+
+.titulo{
+    grid-area: angelelli;
+    background-color: orange;}
+
+        .nombre{font-size: 30px;
+        margin-top: 20px;} 
+
+        .referencia{font-size: 20px;}
+
+.indice{
+    grid-area: indice;
+    background-color: orchid;
+    margin-left: 15px;}
+
+.separador-bio{
+    grid-area: separador;
+    background-color: #584199;
+    height: 5px;
+    width: 60%;
+    margin-bottom: 20px;}
+
+.reseña{
+    grid-area: reseña;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: antiquewhite;}
+
+        .card-img-top{margin-bottom: 10px;}
+
+        .list-group-item{text-align:left;}
+            .titulo-reseña{font-size: 15px; font-weight:bold; /*Texto en Negrita*/ }
+
+
+.desarrollo{
+    grid-area: desarrollo;}
+
+    .cont{text-align: justify;}
