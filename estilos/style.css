@@ -1,0 +1,615 @@
+/*RECET DE CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+/*Menú*/
+
+header{
+    background-color: rgb(153, 77, 77);
+    margin: 20px 70px;
+}
+
+    .container-fluid{
+         align-items: center;}
+
+
+    .nav-link { /*Color de letras*/
+        color: white;
+        font-weight: lighter; /*Grosor del texto*/}
+
+/*MAIN*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "carrusel carrusel"
+        "mensaje diocesis"
+        "mensaje calendario"
+        "video calendario"
+        "separador separador"
+        "imagen oracion";
+    margin: 20px 70px;
+    justify-content: space-between;}
+
+.carrusel{
+    grid-area: carrusel; 
+    background-color: none;
+    width: 75.6rem;
+    height: 40rem;}
+
+    .titulo-principal{
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.9);}
+
+    .evangelio{
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        font-size: 90px;
+        margin-bottom: 20px;
+        color: #f5f5f5;
+        text-shadow: 5px 5px 15px rgba(0,0,0,0.6)}
+
+    .titulo-secundario{
+        margin-bottom: 210px;
+        color: yellow;
+        text-shadow: 3px 3px 10px rgba(0,0,0,0.9);}
+
+
+.mensaje{
+    grid-area: mensaje;
+    background-color: none;
+    display: flex;
+    align-items: center; /*alinea eje vertical*/
+    justify-items: center; /*alinea eje horizontal*/
+    justify-content: center;
+    width: 50rem; /*hancho*/
+    height: 30rem; /*alto*/}
+
+    .card-text{ /*Texto del mensaje*/
+    font-size: 25px;
+    color: #51483d;
+    text-align: center;}
+    
+    .obispo{ /*Imagen del mensaje*/
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;}
+
+    .reseña{ /*Reseña del mensaje*/
+    text-align: center;}
+
+.boton-diocesis{
+    grid-area: diocesis; 
+    background-color: none;
+    display: flex;
+    align-items: center; /*alinea eje vertical*/
+    justify-items: center; /*alinea eje horizontal*/
+    justify-content: center;
+    width: 25.6rem;
+    height: 10rem;}
+
+    .diocesis{
+        width: 150px;
+        height: 85px;
+        border: 2px solid cornflowerblue;
+        border-radius: 10px;
+        padding: 10px;}
+
+
+.calendario{
+    grid-area: calendario;
+    background-color: none;
+    display: flex;
+    align-items: center; /*alinea eje vertical*/
+    justify-items: center; /*alinea eje horizontal*/
+    justify-content: right;
+    width: 25.6rem;
+    height: 50rem;}
+
+    .nav.nav-pills{
+        background-color: gainsboro;
+        padding: 0 10px 5px 0;
+    }
+    
+    .nav-link3{
+        margin: 0 0 15px 0;}
+
+    .nav-link0{
+        font-size: 10px;}
+
+
+.video{
+    grid-area: video;
+    background-color: none;
+    display: flex;
+    align-items: center; /*alinea eje 
+    vertical*/
+    justify-items: center; /*alinea eje 
+    horizontal*/
+    justify-content: center;
+    width: 50rem;
+    height: 30rem;}
+
+.separador{
+    grid-area: separador;
+    grid-column: 1 / -1;
+    height: 15px;
+    background-color: #5c7847;
+    width: 86.1%;
+    margin-bottom: 20px;}
+
+
+.imagen{
+    grid-area: imagen;
+    background-color: none;
+    display: flex;
+    align-items: center; /*alinea eje 
+    vertical*/
+    justify-items: center; /*alinea eje 
+    horizontal*/
+    justify-content: center;
+    width: 50rem;
+    height: 30rem;}
+
+.oracion{
+    grid-area: oracion;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*alinea eje 
+    vertical*/
+    justify-items: center; /*alinea eje 
+    horizontal*/
+    justify-content: center;
+    width: 25.6rem;
+    height: 30rem;}
+
+    .canonizacion{
+        font-size: 20px;
+        padding: 0 0 15px 0;
+        text-decoration:underline;
+        text-align: center;}
+
+    .meditacion{
+        font-size: 15px;
+        text-align: center;
+        margin: 0 25px;}
+
+/*EDICIÓN DEL CONTENIDO DEL CALENDARIO*/
+
+.nav-link3{ /*Titulo Calendario Eventos*/
+    color: white;
+    font-size: 20px; /*Tamaño de la letra*/
+    font-weight: bold; /*Grosor del texto*/
+    background-color: #5c7847;
+    padding: 7px;
+    text-decoration: none; /*Elimina subrayado*/}
+
+.nav-link2{ /*Titulo del mes*/
+    color: brown;
+    font-size: 1.2em;
+    font-weight:bolder;
+    margin-left: 5px;
+    text-decoration:none;
+    text-transform: uppercase;}
+
+.nav-link1{ /*Titulo fecha*/
+    color: black;
+    font-weight: 500;
+    text-decoration: none;}
+
+.nav-link0{ /*Link*/
+    font-style: italic;}
+.nav-link0:hover{color: brown;}
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(157, 77, 77);
+    margin: 20px 70px;
+    padding-top: 20px;
+    align-items: center;
+    justify-items: center;}
+
+
+/*EDICIÓN PAGINAS SECUNDARIAS______________________________________________________________________________*/
+
+/*AÑO JUBILAR*/
+
+.contenedor-año{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "lugar fecha calendario-google"
+        "lugar evento calendario-google"
+        "lugar fecha-horario calendario-google"
+        "separador separador calendario"
+        "correo correo calendario"
+        "ubicacion ubicacion calendario"
+        "informacion informacion calendario";
+    margin: 20px 70px;
+    justify-content: space-between;}
+
+    .lugar1{
+        grid-area: lugar;
+        background-color: none;}
+    
+    .fecha-horario{
+        grid-area: fecha-horario;
+        display: flex;
+        flex-direction: row;
+        font-weight: 500;
+        margin-top: -95px;}
+    
+    .fecha{
+        grid-area: fecha;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        font-weight: 500; /*Grosor de la letra*/} 
+
+        .datos-evento{margin-left: 5px; color: #be1e2d;}
+
+        .tiempo{margin-left:15px;}
+
+    .evento{
+        grid-area: evento;
+        background-color: none;
+        margin-top: -115px;}
+
+        .titulo-evento{margin-left: 15px; font-size: 30px; text-align: justify;}
+
+    .calendario-google{
+        grid-area: calendario-google;
+        background-color: none;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: right;}
+
+    .separador1{
+        grid-area: separador;
+        height: 15px;
+        background-color: #be1e2d;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;}
+
+
+    .ubicacion{
+        grid-area: ubicacion;
+        background-color: none;
+        margin-top: -580px;}
+
+        .direccion-gps{margin-left: 5px; font-size: 20px;}
+
+        .img-gps{margin-left: 15px;}
+
+    .informacion{
+        grid-area: informacion;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: -530px;
+        margin-bottom: 80px;}
+        
+        .info{margin-left: 45px; font-size: 20px;}
+
+        .web-diocesis{margin-left: 5px;}
+
+    .calendario-añojubilar{
+        grid-area: calendario;
+        display: flex;
+        justify-content: right;
+        margin-top: 20px;}
+
+        .nav-link3-añojubilar{ /*Titulo Calendario Eventos*/
+            color: white;
+            font-size: 20px; /*Tamaño de la letra*/
+            font-weight: bold; /*Grosor del texto*/
+            background-color: #be1e2d;
+            padding: 7px;
+            text-decoration: none; /*Elimina subrayado*/}
+
+/*MEMORIA LITURGICA*/
+
+.contenedor-memoria{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "lugar evento-memoria calendario-google"
+        "lugar memoria-liturgica calendario-google"
+        "lugar fecha-memoria calendario-google"
+        "separador separador calendario"
+        "correo correo calendario"
+        "ubicacion ubicacion calendario"
+        "informacion informacion calendario";
+    margin: 20px 70px;
+    justify-content: space-between;}
+
+    .evento-memoria{ /*FECHA DEL EVENTO*/
+        grid-area: evento-memoria;
+        display: flex;
+        flex-direction: row;}
+    
+    .memoria-liturgica{ /*TITULO DEL EVENTO*/
+            grid-area: memoria-liturgica;}
+            
+        .titulo-evento-memoria{margin-left: 15px; margin-top: -30px;font-size:30px; text-align: justify;}
+    
+    .fecha-memoria{ /*HORA Y LUGAR DEL EVENTO*/
+        grid-area: fecha-memoria;
+        background-color: none;
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        font-weight: 500; /*Grosor de la letra*/
+        text-align: justify;} 
+    
+            .datos-evento1{color: #584199;}
+
+    .ubicacion1{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -530px;
+    display: flex;
+    justify-content: space-around;}
+
+    .informacion1{
+        grid-area: informacion;
+        background-color: none;
+        display: flex;
+        flex-direction: row;
+        margin-top: -480px;
+        margin-bottom: 80px;}
+
+/*ANIVERSARIO DE CARLOS Y GABRIEL*/
+
+.memoria-liturgica{ /*TITULO DEL EVENTO*/
+        grid-area: memoria-liturgica;}
+        
+    .titulo-evento-aniversario{margin-left: 15px; margin-top: -25px;font-size:25px; text-align: justify;}
+
+.ubicacion2{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -470px;
+    display: flex;
+    justify-content: space-around;}
+
+.informacion2{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -420px;
+    margin-bottom: 80px;}
+
+/*ACCION DE GRACIAS POR EL ANIVERSARIO DE CARLOS Y GABRIEL - CATEDRAL*/
+
+.memoria-liturgica{ /*TITULO DEL EVENTO*/
+        grid-area: memoria-liturgica;}
+        
+    .titulo-evento-accion-de-gracias{margin-left: 15px; margin-top: -100px;font-size:25px; text-align: justify;}
+
+.fecha-memoria{ /*HORA Y LUGAR DEL EVENTO*/
+    grid-area: fecha-memoria;
+    background-color: none;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500; /*Grosor de la letra*/
+    text-align: justify;} 
+    
+        .datos-evento-gracias{color: #584199;margin-top: -100px;}
+    
+.ubicacion3{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -420px;
+    display: flex;
+    justify-content:none;}
+
+.informacion3{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -380px;
+    margin-bottom: 80px;}
+
+/*ANIVERSARIO DE WENCESLAO PEDERNERA*/
+
+.fecha-memoria{ /*HORA Y LUGAR DEL EVENTO*/
+    grid-area: fecha-memoria;
+    background-color: none;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500; /*Grosor de la letra*/
+    text-align: justify;} 
+    
+        .datos-evento-wence{color: #584199;margin-top: -120px;}
+        .datos-evento-wence1{color: #584199;margin-top: -50px;}
+
+.ubicacion4{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -360px;
+    display: flex;
+    justify-content:none;}
+
+.informacion4{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -320px;
+    margin-bottom: 80px;}
+
+/*ACCION DE GRACIAS WENCESLAO PERDERNERA*/
+
+.ubicacion5{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -280px;
+    display: flex;
+    justify-content:none;}
+
+.informacion5{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -240px;
+    margin-bottom: 80px;}
+
+/*CONMEMORACION ANGELELLI*/
+
+.datas-evento{color:#584199}
+
+.ubicacion6{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -220px;
+    display: flex;
+    justify-content:none;}
+
+.informacion6{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -180px;
+    margin-bottom: 80px;}
+
+/*ACCION DE GRACIAS ANGELELLI*/
+
+.ubicacion7{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -160px;
+    display: flex;
+    justify-content:none;}
+
+.informacion7{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -120px;
+    margin-bottom: 80px;}
+
+/*ANIVERSARIO DEL MARTIRIO ANGELELLI*/
+
+.ubicacion8{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top: -80px;
+    display: flex;
+    justify-content:none;}
+
+.informacion8{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -40px;
+    margin-bottom: 80px;}
+
+/*MISA DE ANIVERSARIO ANGELELLI*/
+
+
+.ubicacion9{
+    grid-area: ubicacion;
+    background-color: none;
+    margin-top:-140ox;
+    display: flex;
+    justify-content:none;}
+
+.informacion9{
+    grid-area: informacion;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: -80px;
+    margin-bottom: 80px;}
+
+
+/*__________________________________________________________________________________________________*/
+
+/*PAGINA BIOGRAFIA*/
+
+/*TARGETAS MARTIRES*/
+
+.contenedor-biografia{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "carrusel"
+        "destacado1"
+        "separador1"
+        "martires"
+        "destacado2"
+        "separador2"
+        "enlaces";
+    margin: 20px 70px;
+    /*justify-content: space-between;*/}
+
+.carrusel2{
+    grid-area: carrusel;
+    background-color: #be1e2d;}
+
+.destacado{
+    grid-area: destacado1;
+    background-color: #5c7847;}
+
+.separador-biografia{
+    grid-area: separador1;
+    background-color: #584199;
+    height: 15px;
+    width: 86.1%;
+    margin-bottom: 20px;}
+
+
+.biografia-martires{
+    grid-area: martires;
+    background-color: aqua;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;}
+
+.destacado2{
+    grid-area: destacado2;
+    background-color: #5c7847;
+    height: 15px;
+    width: 86.1%;
+    margin-bottom: 20px;}
+
+.separador2{
+    grid-area: separador2;
+    background-color: #584199;
+    height: 15px;
+    width: 86.1%;
+    margin-bottom: 20px;}
+
+.enlaces{
+    grid-area: enlaces;
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;}

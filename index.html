@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <title>Document</title>
+
+    <!--ESTILO-->
+    <link rel="stylesheet" href="./estilos/style.css">
+
+</head>
+<body>
+
+    <Header>       
+        <nav class="navbar navbar-expand-lg">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#">
+                    <img src="./assets/home/Logo Beatos martires.png" alt="">
+                 </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Inicio</a>
+                     </li>
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="./paginas primarias/sobrenosotros.html">Biografía</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                         <a class="nav-link" href="./paginas primarias/lugaresdeperegrinacion.html">Lugares de peregrinación</a>
+                     </li>
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="./paginas primarias/materialdeconsulta.html">Material de consulta</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                         <a class="nav-link" href="./paginas primarias/contacto.html">Contacto</a>
+                     </li>
+                   </ul>
+                 </div>
+             </div>
+        </nav>
+
+    </Header>
+
+    <main>
+      <div class="contenedor">
+        <section class="carrusel"> <!--Carrusel-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/carrusel/1.png" class="d-block" style="width: 75.6rem;height: 40rem;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="titulo-principal">Mártires del</h2>
+                            <h2 class="evangelio">EVANGELIO</h2>
+                            <h5 class="titulo-secundario">Pascua riojana, alegría del Pueblo</h5>
+                        </div>
+                    </div>
+                     <div class="carousel-item">
+                        <img src="./assets/carrusel/2.png" class="d-block" style="width: 80rem; height: 40rem;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="titulo-principal">Mártires del</h2>
+                            <h2 class="evangelio">EVANGELIO</h2>
+                            <h5 class="titulo-secundario">Pascua riojana, alegría del Pueblo</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/carrusel/3.png" class="d-block" style="width: 80rem; height: 40rem;" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="titulo-principal">Mártires del</h2>
+                            <h2 class="evangelio">EVANGELIO</h2>
+                            <h5 class="titulo-secundario">Pascua riojana, alegría del Pueblo</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mensaje"> <!--MENSAJE DEL OBISPO-->
+            <div class="card" style="width: 40rem; height: 20rem;">
+                <div class="card-body">
+                    <p class="card-text">“Su Beatificación para nuestro pueblo es un motivo de alegría y también un reconocimiento a la generosa entrega de sus vidas. Hoy nos toca beber de esa fuente de vida y enseñanzas que nos han dejado”</p>
+                    <img class="obispo" src="./assets/home/Sin título (1080 x 1350 px) (1).png" alt="">
+                    <p class="reseña">Obispo Dante Braida</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video"> <!--VIDEO DE LA BEATIFICACIÓN-->
+            <iframe width="650" height="400" src="https://www.youtube-nocookie.com/embed/7_BuWQ1Nq40?rel=0" title="Beatificación Mártires Riojanos" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </section>
+
+
+        <section class="boton-diocesis"> <!--Boton Diocesis de LA Rioja-->
+            <a href="https://diocesislarioja.com.ar/" target="_blank" class="link-imagen">
+                <img src="./Assets/home/Logo transparente diocesis.png" alt="" class="diocesis">
+            </a>
+        </section>
+
+        <section class="calendario"> <!--CALENDARIO EVENTOS-->
+            <div class="row">
+                <div class="col-12">
+                    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link3" href="#item-1">CALENDARIO EVENTOS 2026</a>
+                            <nav class="nav nav-pills flex-column"></nav>
+                            <a class="nav-link2" href="#item-2">Enero</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link1 ms-3 my-1" href="#item-2-1">Jueves 01</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" aria-current="page" href="./paginas secundarias/año-jubilar.html">Inicio año jubilar diocesano</a>
+                                </li>
+                            </nav>
+                            <a class="nav-link2" href="#item-3">Julio</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link1 ms-3 my-1" href="#item-3-1">Viernes 17</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/memoria-liturgica.html">Memoria litúrgica de Beatos Mártires Riojanos</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-3-2">Sábado 18</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/aniversario-de-carlos-y-grabriel.html">Jornada del aniversario del martirio de los beatos Gabriel y Carlos</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-3-3">Domingo 19</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/accion-de-gracias-carlos-y-gabriel.html">Aniversario del Mártirio</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-3-4">Sábado 25</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/aniversario-wenceslao.html">Jornada del aniversario del mártirio del beato Wenceslao Pedernera</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-3-5">Domingo 26</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/accion-de-gracias-wenceslao.html">Aniversario del Mártirio</a>
+                                </li>
+                            <a class="nav-link2" href="#item-4">Agosto</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link1 ms-3 my-1" href="#item-4-1">Sábado 01</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/jornada-de-conmemoracion-angelelli.html">Jornada de Conmemoracion del mártirio del beato Enrique Angeleli</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-4-2">Domingo 02</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/accion-de-gracias-angelelli.html"> Acción de gracias por el beato Enrique Angelelli</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-4-3">Lunes 03</a>
+                                <li class="nav-item">
+                                    <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/jornada-martirio-angelelli.html"> Conmemoración del mártirio del beato Enrique Angeleli</a>
+                                </li>
+                                <a class="nav-link1 ms-3 my-1" href="#item-4-4">Martes 04</a>
+                                <li class="nav-item">
+                                     <a class="nav-link0 ms-4 my-1" href="./paginas secundarias/aniversario-angelelli.html">Jornada del aniversario del mártirio del beato Enrique Angeleli</a>
+                                </li>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <section class="separador"> <!--SEPARADOR--></section>
+
+        <section class="imagen"> <!--IMAGEN BEATOS-->
+            <img src="./assets/home/Beatos martiresriojanos.jpg" class="img-fluid" alt="...">
+        </section>
+
+        <section class="oracion"> <!--ORACION-->
+            <h1 class="canonizacion">Oración para pedir la canonización de los Beatos Mártires Riojanos</h1>
+            <p class="meditacion">Dios, Padre de nuestro Señor Jesucristo, que en Él y por Él manifestaste bienaventurados a los que tienen hambre y sed de justicia, ya los perseguidos y ultrajados por causa suya, te imploramos que la Iglesia en Argentina recoja y siga haciendo fecunda la siembra evangélica de los Beatos Enrique Angelelli, Carlos de Dios Murias, Gabriel Longueville y Wenceslao Pedernera. Te pedimos la gracia de ver proclamados sus nombres entre los santos mártires de tu Iglesia. Que sus vidas y muertes, como testigos de la fe en Jesús, afiancen por tu Espíritu la esperanza en el corazón de tu pueblo, para que, peregrinando hacia el Tinkunaco final, construya la paz en la justicia y el amor. Amén.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <figure class="facebbok">
+                <a href="https://www.facebook.com/diocesisde.larioja/?locale=es_LA" target="_blank" class="link-imagen">
+                    <img src="./Assets/Iconos de redes/icono facebbok.png" alt="" class="red1" style="width: 60px; height: 70px;">
+                </a>
+            </figure>
+
+            <figure>
+                <img src="./assets/Iconos de redes/Icono diocesis.png" class="figure-img img-fluid rounded" style="width: 150px; height: 70px;" alt="...">
+            </figure>
+
+            <figure class="instagram">
+                <a href="https://www.instagram.com/diocesisdelarioja/?hl=es" target="_blank" class="link-imagen">
+                    <img src="./Assets/Iconos de redes/Icono instagram.png" alt="" class="red2" style="width: 60px; height: 70px;">
+                </a>
+            </figure>
+        </div>
+    </footer>
+    
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
