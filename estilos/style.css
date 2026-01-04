@@ -616,7 +616,7 @@ header{
 
 .encabezado{
     display: grid;
-    grid-template-columns: 704px 272px auto;
+    grid-template-columns: 640px 256px auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "menu menu menu"
@@ -628,24 +628,19 @@ header{
     margin: 20px 70px;}
 
 .menu{
-    grid-area: menu;
-    background-color: #be1e2d;}
+    grid-area: menu;}
 
 .imagen1{
-    grid-area: foto;
-    background-color: #5c7847;}
+    grid-area: foto;}
 
 .imagen2{
-    grid-area: foto1;
-    background-color: aqua;}
+    grid-area: foto1;}
 
 .imagen3{
-    grid-area: foto2;
-    background-color:#51483d;}
+    grid-area: foto2;}
 
 .titulo{
-    grid-area: angelelli;
-    background-color: orange;}
+    grid-area: angelelli;}
 
         .nombre{font-size: 30px;
         margin-top: 20px;} 
@@ -653,22 +648,24 @@ header{
         .referencia{font-size: 20px;}
 
 .indice{
-    grid-area: indice;
-    background-color: orchid;
-    margin-left: 15px;}
+    grid-area: indice;;
+    margin-left: 60px;}
+
+        .titulo-indice{font-size: 20px;}
 
 .separador-bio{
     grid-area: separador;
     background-color: #584199;
     height: 5px;
-    width: 60%;
+    width: 100%;
     margin-bottom: 20px;}
 
 .reseña{
     grid-area: reseña;
     padding: 10px;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 60px;
+    justify-items: center;
     background-color: antiquewhite;}
 
         .card-img-top{margin-bottom: 10px;}
