@@ -577,8 +577,8 @@ header{
 .destacado{
     grid-area: destacado1;
     font-size: 22px;
-    margin-top: 20px;
-    background-color: #5c7847;}
+    margin-top: 40px;
+    background-color: none;}
 
 .separador-biografia{
     grid-area: separador1;
@@ -589,14 +589,14 @@ header{
 
 .biografia-martires{ /*Targetas de los mártires*/
     grid-area: martires;
-    background-color: aqua;
+    background-color: none;
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;}
 
         .card-title{text-align: center;} /*Titulo de las tragetas*/
 
-.destacado2{
+.destacado{
     grid-area: destacado2;}
 
 .separador2{
@@ -610,7 +610,53 @@ header{
     grid-area: enlaces;
     display: flex;
     flex-direction: row;
-    background-color: yellow;}
+    background-color: none;
+    margin: 3rem 0;}
+
+        .enlaces h2 {
+                text-align: center;
+                margin-bottom: 2rem;}
+
+        .grid-notas {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+                gap: 1.5rem;}
+
+        .nota {
+                background-color: #f9f9f9;
+                border-radius: 14px;
+                padding: 1.4rem 1.6rem;
+                border-left: 4px solid #8b0000;
+                display: flex;
+                flex-direction: column;}
+
+        .nota-icono {
+                font-size: 2.2rem;
+                color: #8b0000;
+                margin-bottom: 0.6rem;}
+
+        .nota h3 {
+                font-size: 1.1rem;
+                margin-bottom: 0.4rem;}
+
+        .nota p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                flex-grow: 1;}
+
+        .nota a {
+                margin-top: 1rem;
+                font-weight: 600;
+                text-decoration: none;
+                color: #8b0000;}
+
+        .nota a:hover {
+                text-decoration: underline;}
+
+    .card-reliquia{
+        margin-left: auto;
+    }
+
 
 /*Biografia Enrique angelelli*/
 
