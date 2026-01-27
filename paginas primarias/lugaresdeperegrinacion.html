@@ -3,43 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
     <title>Document</title>
+
+
+    <!--ESTILO-->
+    <link rel="stylesheet" href="../estilos/style.css">
+
+
 </head>
 <body>
-  <Header>       
-      <nav class="navbar navbar-expand-lg">
-           <div class="container-fluid">
-               <a class="navbar-brand" href="#">
-                  <img src="./assets/home/Logo Beatos martires.png" alt="">
-               </a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-               aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarNav">
-                 <ul class="navbar-nav">
-                   <li class="nav-item">
-                       <a class="nav-link" href="../index.html">Inicio</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
-                   </li>
-                   
-                   <li class="nav-item">
-                       <a class="nav-link" href="#">Lugares de peregrinación</a>
-                   </li>
-                   <li class="nav-item">
-                       <a class="nav-link" href="./materialdeconsulta.html">Material de consulta</a>
-                   </li>
-                   
-                   <li class="nav-item">
-                       <a class="nav-link" href="./contacto.html">Contacto</a>
-                   </li>
-                 </ul>
-               </div>
-           </div>
-      </nav>
-  </Header>    
+
+    <Header>       
+        <nav class="navbar navbar-expand-lg">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#">
+                    <img src="../assets/home/Logo Beatos martires.png" alt="">
+                 </a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+
+
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <a class="nav-link" href="../index.html">Inicio</a>
+                     </li>
+
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas primarias/sobrenosotros.html">Biografía</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Lugares de peregrinación</a>
+                     </li>
+
+
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas primarias/materialdeconsulta.html">Material de consulta</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                         <a class="nav-link" href="../paginas primarias/contacto.html">Contacto</a>
+                     </li>
+                   </ul>
+                 </div>
+             </div>
+        </nav>
+  </Header>
+
+    <main>
+        <div class="contenedor-peregrinacion">
+            <section class="carrusel"> <!--Carrusel-->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/paginas primarias/lugares-peregrinacion/peregrinacion-portada.png" class="d-block" style="width: 75.6rem;height: 40rem;" alt="...
+">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="titulo-principal">Tierra de</h2>
+                                <h2 class="evangelio">MÁRTIRES</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="titulo-pere">
+                <h1 class="lugares">LUGARES DE PEREGRINACIÓN</h1>
+            </section>
+
+            <section class="descripcion-pere">
+                <p class="contenido-pere">
+                    Los lugares de peregrinación con el fin de obtener los frutos espirituales propios de este tiempo de gracia.</p>
+                    
+                <p class="contenido-pere">Los fieles que peregrinen con espíritu de conversión a cualquiera de estos lugares sagrados podrán recibir, según las disposiciones de la Iglesia, la indulgencia jubilar, cumpliendo las condiciones habituales: confesión sacramental, comunión eucarística y oración por las intenciones del Sumo Pontífice.</p>
+                    
+                <p class="contenido-pere">se establecen como templos jubilares y lugares de peregrinación:</p>
+            </section>
+
+            <section class="lista-de-lugares">
+                <ul>
+                    <li>Iglesia Catedral San Nicolás de Bari, en la ciudad de La Rioja</li>
+                    <li>Parroquia El Salvador, en Chamical</li>
+                    <li>Ermita del Paraje del Buen Pastor, en Punta de los Llanos</li>
+                    <li>Iglesia del Sagrado Corazón de Jesús, en Sañogasta</li>
+                    <li>Gruta de los Mártires, en Bajo de Lucas (Parroquia de Chamical)</li>
+                </ul>
+            </section>
+
+            <section class="mapa-de-la-rioja">
+                <div class="mapa-rioja">
+                    <h2>Lugares estratégicos para visitar</h2>
+                    <div id="mapRioja"></div>
+                </div>
+
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+                <script src="./js/mapa-rioja.js"></script>
+            </section>
+        </div>
+
+    </main>
+  
+    <footer>
+        <div class="footer">
+            <figure class="facebbok">
+                <a href="https://www.facebook.com/diocesisde.larioja/?locale=es_LA" target="_blank" class="link-imagen">
+                    <img src="../Assets/Iconos de redes/icono facebbok.png" alt="" class="red1" style="width: 60px; height: 70px;">
+                </a>
+            </figure>
+
+
+            <figure>
+                <img src="../assets/Iconos de redes/Icono diocesis.png" class="figure-img img-fluid rounded" style="width: 150px; height: 70px;" alt="...">
+            </figure>
+
+
+            <figure class="instagram">
+                <a href="https://www.instagram.com/diocesisdelarioja/?hl=es" target="_blank" class="link-imagen">
+                    <img src="../Assets/Iconos de redes/Icono instagram.png" alt="" class="red2" style="width: 60px; height: 70px;">
+                </a>
+            </figure>
+        </div>
+    </footer>
+    
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
