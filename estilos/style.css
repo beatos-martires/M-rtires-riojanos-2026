@@ -729,36 +729,3 @@ header{
 /*PAGINA LUGARES DE PEREGRINACION_____________________________________________________________________________________*/
 
 /*Mapa de La Rioja*/
-
-#mapRioja{
-  width: 100%;
-  height: 520px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-}
-
-/* pin pulsante */
-.pulse-marker{
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #8b0000;
-  position: relative;
-}
-.pulse-marker::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  border-radius: 50%;
-  background: rgba(139,0,0,.35);
-  animation: pulse 1.6s ease-out infinite;
-}
-@keyframes pulse{
-  0% { transform: scale(1); opacity: .9; }
-  100% { transform: scale(3.2); opacity: 0; }
-}
-
-@media (max-width: 768px){
-  #mapRioja{ height: 420px; }
-}

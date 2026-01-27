@@ -2,6 +2,10 @@
 
 /*CODIGO DE MAPA DE LA RIOJA*/
 
+document.addEventListener("DOMContentLoaded", () => {
+  const mapEl = document.getElementById("mapRioja");
+  if (!mapEl) return; // evita romper otras páginas
+
 // 1) Crear mapa (centro aprox. La Rioja)
 const map = L.map("mapRioja", { scrollWheelZoom: false }).setView([-29.8, -67.6], 7);
 
@@ -71,4 +75,4 @@ lugares.forEach((lugar) => {
 
 // 6) Ajustar encuadre para que entren todos
 const grupo = L.featureGroup(markers);
-map.fitBounds(grupo.getBounds().pad(0.25));
+map.fitBounds(grupo.getBounds().pad(0.25));});
