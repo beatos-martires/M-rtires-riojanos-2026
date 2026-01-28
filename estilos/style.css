@@ -728,20 +728,15 @@ header{
 
 /*PAGINA LUGARES DE PEREGRINACION_____________________________________________________________________________________*/
 
-/*Mapa de La Rioja*/
+/*Mapa de La Rioja_________________________*/
 .mapa-diocesis {
-  margin: 3rem 0;
-}
-
-.mapa-diocesis h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
+  margin-top: 0px;
 }
 
 /* contenedor relativo: los pines se posicionan arriba */
 .mapa-wrap {
   position: relative;
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 18px;
   overflow: hidden;
@@ -751,7 +746,7 @@ header{
 
 .mapa-img {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -767,8 +762,8 @@ header{
 
 /* circulito principal */
 .pin .pulse {
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #8b0000;
   display: block;
@@ -785,7 +780,7 @@ header{
   border-radius: 10px;
   background: rgba(255,255,255,.92);
   border: 1px solid rgba(139,0,0,.25);
-  font-size: 0.85rem;
+  font-size: 0.60rem;
   white-space: nowrap;
 }
 
@@ -797,7 +792,7 @@ header{
   margin-bottom: 8px;    /* separación del circulito */
 
   padding: 4px 8px;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   background: #fff;
   border-radius: 10px;
   border: 1px solid rgba(139,0,0,.4);
@@ -826,31 +821,31 @@ header{
 /* La Rioja Capital – Catedral */
 .pin-catedral {
   top: 39%;
-  left: 76%;
+  left: 60%;
 }
 
 /* Chamical – El Salvador */
 .pin-chamical {
-  top: 57%;
-  left: 85%;
+  top: 59%;
+  left: 72%;
 }
 
 /* Sañogasta – Sagrado Corazón */
 .pin-sanogasta {
   top: 37%;
-  left: 44%;
+  left: 35%;
 }
 
 /* Bajo de Lucas – Gruta */
 .pin-bajo-lucas {
-  top: 62%;
-  left: 84%;
+  top: 64%;
+  left: 67%;
 }
 
 /* Punta de los Llanos – Buen Pastor */
 .pin-punta-llanos {
   top: 51%;
-  left: 70%;
+  left: 56%;
 }
 
 /* SVG encima del mapa */
@@ -863,7 +858,7 @@ header{
   z-index: 3; /* debajo de los pines si tus pines usan z-index 5 */
 }
 
-/*CARRUSEL - PEREGRINACION*/
+/*CARRUSEL - PEREGRINACION________________________*/
 .carrusel-multiple {
   margin: 3rem auto;
 }
@@ -892,3 +887,162 @@ header{
     height: 200px;
   }
 }
+
+/*GALERIA - LUGARES________________________*/
+
+.galeria-beatos {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+/* Caja de imagen */
+.galeria-item {
+  display:inline-block;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 14rem;
+  height: 17rem;
+  cursor: pointer;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.12);
+  }
+}
+
+/* Imagen central más grande */
+.galeria-item--principal {
+  height: 24rem;
+  width: 20rem;}
+
+/* Overlay sutil */
+.galeria-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background .3s ease;
+}
+
+.galeria-item:hover::after {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .galeria-beatos {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-item,
+  .galeria-item--principal {
+    height: 16rem;
+  }
+}
+
+/*ESTRUCTURAS DE LA PAGINA_____________________________*/
+
+.contenedor-peregrinacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "portada portada"
+        "lugares lugares"
+        "contenido contenido"
+        "lista mapa"
+        "lista mapa";
+    margin: 20px 70px;}
+
+    .portada{
+        grid-area: portada;}
+
+    .titulo-pere{
+        grid-area: lugares;}
+
+    .descripcion-pere{
+        grid-area: contenido;}
+
+    .lista-de-lugares{
+        grid-area: lista;}
+    
+    .mapa-diocesis{
+        grid-area: mapa;}
+
+.contenedor-lugar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "targeta1 fotos1"
+    "targeta2 fotos2"
+    "targeta3 fotos3"
+    "targeta4 fotos4"
+    "targeta5 fotos5";
+    margin: 20px 70px;
+    align-items: center;}
+
+    .targeta-informacion.card1{
+        grid-area: targeta1;}
+
+    .container-beatos.galeria-beatos1{
+        grid-area: fotos1;}
+
+    .targeta-informacion.card2{
+     grid-area: targeta2;}
+    
+    .container.galeria-beatos2{
+     grid-area: fotos2;}
+
+    .targeta-informacion.card3{
+     grid-area: targeta3;}
+
+    .container-beatos.galeria-beatos3{
+     grid-area: fotos3;}
+
+    .targeta-informacion.card4{
+     grid-area: targeta4;}
+
+    .container-beatos.galeria-beatos4{
+     grid-area: fotos4;}
+
+    .targeta-informacion.card5{
+     grid-area: targeta5;}
+
+    .container-beatos.galeria-beatos5{
+     grid-area: fotos5;}
+
+/*Edición de formato____________________*/
+
+.titulo-pere h1{ /*Titulo Lugares de Peregrinacion*/
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;}
+
+.lista-de-lugares p{ /*Parrafos*/
+    text-align: justify;
+    line-height: 1.8rem;}
+
+.lista-de-lugares ul{
+    line-height: 3rem;
+    font-weight: 700;}
+
+.targeta-informacion h5 { /*Titulo targeta*/
+    text-align: left; 
+    font-size: 22px;
+    margin-bottom: 10px;} 
+.targeta-informacion p {
+    text-align: justify; 
+    font-size: 18px;} 
